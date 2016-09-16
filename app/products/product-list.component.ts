@@ -7,6 +7,8 @@ import { Component } from 'angular2/core'
 
 export class ProductListComponent{
     pageTitle: string = "Product list";
+    imageWidth: number = 50;
+    imageHeight: number = 50;
     products: any[] = [
         {
             "productId": 1,
@@ -38,15 +40,15 @@ export class ProductListComponent{
             "starRating": 4.8,
             "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
         },
-         {
-        "productId": 8,
-        "productName": "Saw",
-        "productCode": "TBX-0022",
-        "releaseDate": "May 15, 2016",
-        "description": "15-inch steel blade hand saw",
-        "price": 11.55,
-        "starRating": 3.7,
-        "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
+        {
+            "productId": 8,
+            "productName": "Saw",
+            "productCode": "TBX-0022",
+            "releaseDate": "May 15, 2016",
+            "description": "15-inch steel blade hand saw",
+            "price": 11.55,
+            "starRating": 3.7,
+            "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
         },
         {
             "productId": 10,
