@@ -20,8 +20,7 @@
 
         <div class='table-responsive'>
             <table class='table' *ngIf='products && products.length'>
-                <thead>
-                    
+                <thead>                    
                         <th>
                             <button class='btn btn-primary' (click)='toggleImage()'>
                                 {{showImage ? 'Hide' : 'Show'}} Image
@@ -37,7 +36,8 @@
                 <tbody>
                     <tr *ngFor='#product of products'>
                         <td>
-                            <img [src]= 'product.imageUrl'
+                            <img *ngIf= 'showImage' 
+                                [src]= 'product.imageUrl'
                                 [title]= 'product.productName'
                                 [style.width.px]= 'imageWidth'
                                 [style.height.px]= 'imageHeight'>
